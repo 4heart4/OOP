@@ -6,6 +6,7 @@ public class CarTest {
         bmw.startEngine();
         bmw.drive();
         bmw.keepSpeed(50);
+        bmw.stopCar();
         bmw.stopEngine();
     }
 }

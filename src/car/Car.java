@@ -1,41 +1,41 @@
 package car;
 
-public class Car {
+class Car {
     private double engine;
     private int speed;
     private boolean start;
 
-    public double getEngine () {
+    private double getEngine () {
         return engine;
     }
 
-    public void setEngine (double engine) {
+    private void setEngine (double engine) {
         this.engine = engine;
     }
 
-    public void startEngine () {
+    void startEngine () {
         start = true;
         System.out.println("Start the engine." + "The car starts to drive");
     }
 
-    public void drive () {
+    void drive () {
         System.out.println("Car drive");
     }
 
 
-    public void keepSpeed (int x) {
+    void keepSpeed (int x) {
         speed += x;
-        System.out.println("is driving " + speed + " kilometers per hour.");
+        System.out.println("Is driving " + speed + " kilometers per hour.");
     }
 
-
-    public void stopEngine () {
-        start = false;
-        System.out.println("The engine stopped working");
-    }
-
-    public void stopCar () {
+    void stopCar () {
         speed = 0;
         System.out.println("The car stopped");
+    }
+
+
+    void stopEngine () {
+        start = false;
+        System.out.println("The engine stopped working");
     }
 }
