@@ -5,8 +5,7 @@ public class CarTest {
         Car bmw = new Car();
         bmw.startEngine();
         bmw.drive();
-        bmw.speed(50);
-        bmw.Stop();
-
+        bmw.keepSpeed(50);
+        bmw.stopEngine();
     }
 }
